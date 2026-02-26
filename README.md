@@ -15,6 +15,11 @@ Todo FastAPI is a small full‑stack example with a FastAPI backend, PostgreSQL 
   - `docker compose exec backend uv run aerich migrate`
   - `docker compose exec backend uv run aerich upgrade`
 
+### URLs
+
+- **FastAPI docs (Swagger)**: `http://localhost:8004/docs`
+- **Todo app (Vite dev server)**: `http://localhost:5173`
+
 ### Inspect PostgreSQL
 
 - **Open psql inside the DB container** (example):  
@@ -22,15 +27,3 @@ Todo FastAPI is a small full‑stack example with a FastAPI backend, PostgreSQL 
 - **List databases**: `\l`
 - **Connect to dev DB**: `\c backend_dev`
 - **List tables**: `\dt`
-
-### Frontend (React / Vite)
-
-From the `frontend` folder:
-
-- **Install deps (first time)**: `npm install`
-- **Start dev server**: `npm run dev`
-
-### URLs
-
-- **FastAPI docs (Swagger)**: `http://localhost:8004/docs`
-- **Todo app (Vite dev server)**: `http://localhost:5173`

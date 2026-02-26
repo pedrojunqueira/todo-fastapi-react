@@ -16,6 +16,17 @@ services:
     depends_on:
       - backend-db
 
+  # React/Vite Frontend
+  frontend:
+    build: ./frontend
+    working_dir: /usr/src/app
+    ports:
+      - 5173:5173
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend
+
   # PostgreSQL Database
   backend-db:
     build:
